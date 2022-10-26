@@ -411,6 +411,15 @@ export default [
     props: (route) => ({ user: store.state.auth.currentUser || {} }),
   },
   {
+    path: '/import/gasbuddy',
+    name: 'import-gasbuddy',
+    component: () => lazyLoadView(import('@views/import-gasbuddy.vue')),
+    meta: {
+      authRequired: true,
+    },
+    props: (route) => ({ user: store.state.auth.currentUser || {} }),
+  },
+  {
     path: '/logout',
     name: 'logout',
     meta: {

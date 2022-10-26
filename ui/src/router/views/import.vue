@@ -32,6 +32,12 @@ export default {
         <br />
         <b-button type="is-primary" tag="router-link" to="/import/fuelly">Import</b-button>
       </div>
+      <div class="box column is-one-third" to="/import-gasbuddy">
+        <h1 class="title">GasBuddy</h1>
+        <p>If you have been using GasBuddy to store your fuel logs, export the CSV file from GasBuddy and click here to import.</p>
+        <br />
+        <b-button type="is-primary" tag="router-link" to="/import/gasbuddy">Import</b-button>
+      </div>
     </div>
   </Layout>
 </template>
